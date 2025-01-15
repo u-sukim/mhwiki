@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: gray;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'S-CoreDream-3Light';
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+#logo {
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 255, 174);
+}
+
+h1, h2, h3 {
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    font-size: 28px;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+hr {
+    color: white;
+}
+
+#content {
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+#nav-bar {
+    margin-top: 20px;
+}
+
+.navs {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+#bottom {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#information {
+    position: relative;
+    padding: 50px;
+    background-image: url("배경.jpg");
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#information::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.blogs {
+    text-align: center;
+    width: 50%; /* Default width for PC and tablet */
+    list-style: none;
+}
+
+#inner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Mobile styles (device width 767px or less) */
+@media (max-width: 500px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blogs {
+        width: 100%;
+        
+    }
+
+    #content {
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navs {
+        display: inline;
+        margin-right: 5px;
+        list-style-type: none;
+    }
+
+    h1 {
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    h2 {
+        font-size: 15px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    h3 {
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+    #discord, #email {
+        font-size: 15px;
+    }
+}
